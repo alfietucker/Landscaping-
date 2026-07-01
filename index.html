@@ -3,175 +3,103 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Perth Landscape Co. | Landscape Design &amp; Construction Specialists</title>
-<meta name="description" content="Perth Landscape Co. — residential landscape design and construction specialists. Durable, high-quality outdoor solutions backed by a 5-year workmanship guarantee. Get a fast quote today." />
+<title>Oasis Landscapes &middot; Perth | Landscape Design &amp; Construction</title>
+<meta name="description" content="Oasis Landscapes of Perth — full-service landscape design, construction, and maintenance. See your new yard before a shovel hits the dirt. Schedule your landscape meeting today." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
 
-<!-- ============ TOP BAR ============ -->
-<div class="topbar">
-  <p>Perth&rsquo;s Local Residential Landscaping Specialists&nbsp;&nbsp;|&nbsp;&nbsp;Backed by a 5-Year Workmanship Guarantee</p>
-</div>
+<!-- ============ HERO + NAV ============ -->
+<section class="hero" id="top">
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="Oasis Landscapes home">
+        <img src="assets/img/logo-icon.png" alt="" class="logo__icon" />
+        <span class="logo__text">
+          <span class="logo__name">OASIS</span>
+          <span class="logo__sub">LANDSCAPES &middot; PERTH</span>
+        </span>
+      </a>
 
-<!-- ============ NAV ============ -->
-<header class="nav" id="top">
-  <div class="container nav__inner">
-    <a href="#top" class="logo" aria-label="Perth Landscape Co. home">
-      <!-- logo -->
-      <svg class="logo__svg" viewBox="0 0 300 96" role="img" aria-label="Perth Landscape Co.">
-        <polyline points="44,40 150,12 256,40" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-        <polyline points="44,40 96,28" fill="none" stroke="#2e7d32" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="150" y="62" text-anchor="middle" class="logo__name">PERTH</text>
-        <text x="150" y="86" text-anchor="middle" class="logo__sub">LANDSCAPE CO.</text>
-      </svg>
-    </a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav__menu" aria-label="Primary">
-      <ul>
-        <li><a href="#top" class="is-active">Home</a></li>
-        <li><a href="#about">About us</a></li>
-        <li class="has-sub">
-          <a href="#solutions">Services <i class="fa-solid fa-chevron-down"></i></a>
-          <ul class="subnav">
-            <li><a href="#solutions">Landscape Design &amp; Construction</a></li>
-            <li><a href="#solutions">Garden &amp; Lawn Restoration</a></li>
-            <li><a href="#solutions">Retaining Walls &amp; Paving</a></li>
-          </ul>
-        </li>
-        <li><a href="#solutions">Landscapes</a></li>
-        <li><a href="#projects">Suburbs</a></li>
-        <li><a href="#quote">Estimate</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="tel:0400000000" class="btn btn--teal nav__cta"><i class="fa-solid fa-phone"></i> Get a fast quote</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero__overlay"></div>
-  <div class="container hero__inner">
-    <div class="hero__copy">
-      <h1>Trusted Experts in Landscape Design &amp; Construction</h1>
-      <p>Delivering durable, high-quality landscaping solutions backed by experience, precision, and long-term care for Perth homes.</p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--teal">Get in touch</a>
-        <a href="#solutions" class="btn btn--ghost">View our services</a>
-      </div>
+      <nav class="nav__menu" aria-label="Primary">
+        <ul>
+          <li><a href="#top" class="is-active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#financing">Financing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:0861234567" class="pill pill--phone">(08) 6123 4567</a>
+          <a href="#contact" class="pill pill--apply">Apply Online</a>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <div class="quote-card" id="quote">
-      <h2>Get a quick quote</h2>
-      <p class="quote-card__sub">Share your details and we&rsquo;ll be in touch shortly.</p>
-      <form onsubmit="return false;">
-        <div class="quote-card__row">
-          <label>Name
-            <input type="text" placeholder="John" />
-          </label>
-          <label>Email
-            <input type="email" placeholder="youremail@gmail.com" />
-          </label>
-        </div>
-        <div class="quote-card__row">
-          <label>Phone number
-            <input type="tel" placeholder="0400 000 000" />
-          </label>
-          <label>Postal code
-            <input type="text" placeholder="6000" />
-          </label>
-        </div>
-        <label class="quote-card__full">Message
-          <textarea rows="4" placeholder="Your message"></textarea>
-        </label>
-        <div class="quote-card__submit">
-          <button type="submit" class="btn btn--teal">Submit</button>
-        </div>
-      </form>
-    </div>
+  <div class="hero__inner container">
+    <h1>Landscaping that transforms outdoor living spaces.</h1>
+    <p class="hero__sub">See exactly what your yard will look like, and how much time and money you&rsquo;ll save, all before a shovel hits the dirt.</p>
+    <a href="#quote" class="btn btn--orange">Schedule your landscape meeting</a>
   </div>
 </section>
 
-<!-- ============ BUILT ON TRUST ============ -->
-<section class="trust" id="about">
-  <div class="container trust__inner">
-    <div class="trust__media">
-      <img src="assets/img/about.jpg" alt="Newly landscaped garden at a Perth home" />
-    </div>
-    <div class="trust__copy">
-      <h2>Built on trust, strengthened by experience, driven by quality, and focused on long-term outdoor living.</h2>
-      <p>We are a team of skilled landscaping professionals dedicated to delivering reliable, high-quality landscape design and construction. With years of hands-on industry experience, we combine precision workmanship with durable materials to create outdoor spaces that last, for homes and commercial properties across Perth.</p>
-      <ul class="trust__points">
-        <li><i class="fa-solid fa-circle-check"></i> Built on trust &amp; reliability</li>
-        <li><i class="fa-solid fa-circle-check"></i> Skilled craftsmanship in every project</li>
-        <li><i class="fa-solid fa-circle-check"></i> Professional response every time</li>
-      </ul>
-      <a href="#about" class="btn btn--teal">Know more</a>
-      <div class="warranty-badge" aria-label="5 Year Workmanship Guarantee">
-        <span class="warranty-badge__top"><b>5</b> Year Workmanship</span>
-        <span class="warranty-badge__bottom">GUARANTEE</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY CRUCIAL ============ -->
-<section class="crucial">
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
   <div class="container">
-    <h2>Why is it crucial to maintain or upgrade your landscape?</h2>
-    <p class="section-sub">Your garden is your property&rsquo;s first impression, standing up to Perth&rsquo;s harsh sun, sandy soil, and dry summers. Over time, even the best-designed landscapes can show signs of wear. Common issues include:</p>
-    <div class="crucial__pills">
-      <span class="pill">Overgrown or dying lawns</span>
-      <span class="pill">Poor drainage &amp; waterlogging</span>
-      <span class="pill">Cracked paving or retaining walls</span>
-      <span class="pill">Outdated garden design</span>
+    <h2>Our Services</h2>
+    <div class="services__inner">
+      <div class="services__media">
+        <img src="assets/img/services.jpg" alt="Landscaped Perth home with paved driveway and palms" />
+        <span class="badge badge--green">Turn your yard into an Oasis!</span>
+      </div>
+      <ul class="services__list">
+        <li>
+          <span class="services__icon"><i class="fa-solid fa-compass-drafting"></i></span>
+          <div>
+            <h3>Full Scale Landscaping</h3>
+            <p>Transform your outdoor space with custom, full-scale landscaping tailored to your vision.</p>
+          </div>
+        </li>
+        <li>
+          <span class="services__icon"><i class="fa-solid fa-cubes"></i></span>
+          <div>
+            <h3>Pavers &amp; Hardscapes</h3>
+            <p>Elevate your kerb appeal with beautifully crafted paver patios, walkways, and retaining walls.</p>
+          </div>
+        </li>
+        <li>
+          <span class="services__icon"><i class="fa-solid fa-tree"></i></span>
+          <div>
+            <h3>Tree Installation &amp; Removal</h3>
+            <p>Expert tree planting and safe, efficient removal to keep your property thriving and tidy.</p>
+          </div>
+        </li>
+        <li>
+          <span class="services__icon"><i class="fa-solid fa-seedling"></i></span>
+          <div>
+            <h3>Turf &amp; Shrubbery Installation</h3>
+            <p>Instantly refresh your yard with lush turf and expertly placed shrubs for year-round beauty.</p>
+          </div>
+        </li>
+        <li>
+          <span class="services__icon"><i class="fa-solid fa-truck"></i></span>
+          <div>
+            <h3>Dirt, Mulch, Sand, Rock &amp; More</h3>
+            <p>Quality landscape materials delivered and installed to meet all your outdoor project needs.</p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <p class="section-sub crucial__foot">Ignoring these problems can lead to costly repairs and reduced street appeal. A professional landscape upgrade not only restores your outdoor space but also improves water efficiency and long-term property value.</p>
-  </div>
-</section>
-
-<!-- ============ LANDSCAPING SOLUTIONS ============ -->
-<section class="solutions" id="solutions">
-  <div class="container solutions__inner">
-    <div class="solutions__intro">
-      <h2>Our landscaping solutions</h2>
-      <p>Reliable landscaping solutions designed for durability, performance, and long-term outdoor enjoyment.</p>
-      <a href="#solutions" class="btn btn--teal">Explore more</a>
-    </div>
-    <div class="solutions__list">
-      <article class="sol-card">
-        <div class="sol-card__img"><img src="assets/img/sol-metal.jpg" alt="Modern Perth garden landscape design" /></div>
-        <div class="sol-card__body">
-          <h3>Landscape Design &amp; Construction</h3>
-          <p>Custom outdoor spaces designed and built to last, ideal for new homes and renovations.</p>
-          <a href="#quote" class="btn btn--white">Know more</a>
-        </div>
-      </article>
-      <article class="sol-card">
-        <div class="sol-card__img"><img src="assets/img/sol-restore.jpg" alt="Garden and lawn restoration in progress" /></div>
-        <div class="sol-card__body">
-          <h3>Garden &amp; Lawn Restoration</h3>
-          <p>Restore your garden&rsquo;s health and appearance, extending its life without the cost of a full redesign.</p>
-          <a href="#quote" class="btn btn--white">Know more</a>
-        </div>
-      </article>
-      <article class="sol-card">
-        <div class="sol-card__img"><img src="assets/img/sol-colorbond.jpg" alt="Restored paved outdoor entertaining area" /></div>
-        <div class="sol-card__body">
-          <h3>Retaining Walls &amp; Paving Restoration</h3>
-          <p>Revitalise retaining walls and paved areas with professional cleaning, repairs, and protective treatments for long-lasting performance.</p>
-          <a href="#quote" class="btn btn--white">Know more</a>
-        </div>
-      </article>
+    <div class="services__cta">
+      <a href="#quote" class="btn btn--orange">Schedule your landscape meeting</a>
     </div>
   </div>
 </section>
@@ -179,106 +107,100 @@
 <!-- ============ WHY CHOOSE US ============ -->
 <section class="choose">
   <div class="container">
-    <h2>Why choose us</h2>
-    <p class="section-sub">Experienced professionals delivering reliable landscaping solutions.</p>
+    <h2>Why Choose Us</h2>
+    <p class="section-sub">At Oasis Landscapes of Perth, we pride ourselves on providing exceptional customer service and quality workmanship. We use only the highest-quality materials and latest techniques to ensure that every project is completed to perfection. Let us help you create a beautiful outdoor space that you&rsquo;ll be proud to call your own. Contact us today to schedule a consultation with one of our expert designers.</p>
+    <span class="divider"></span>
     <div class="choose__grid">
       <article class="choose-card">
-        <div class="choose-card__icon"><i class="fa-solid fa-user-group"></i></div>
-        <h3>The right team</h3>
-        <p>Our skilled professionals are trained, experienced, and committed to delivering quality workmanship on every project.</p>
+        <span class="choose-card__icon"><i class="fa-solid fa-stopwatch"></i></span>
+        <h3>Fast Design &amp; Install</h3>
       </article>
       <article class="choose-card">
-        <div class="choose-card__icon"><i class="fa-solid fa-trophy"></i></div>
-        <h3>Years of experience</h3>
-        <p>With extensive industry experience, we understand Perth&rsquo;s climate and soil challenges and provide solutions that last.</p>
+        <span class="choose-card__icon"><i class="fa-solid fa-paint-roller"></i></span>
+        <h3>Quality Service</h3>
       </article>
       <article class="choose-card">
-        <div class="choose-card__icon"><i class="fa-solid fa-puzzle-piece"></i></div>
-        <h3>Wide range of solutions</h3>
-        <p>From new garden builds to complete landscape renovations, we offer tailored solutions for residential and commercial properties.</p>
+        <span class="choose-card__icon"><i class="fa-solid fa-leaf"></i></span>
+        <h3>Beautiful Aesthetics</h3>
       </article>
       <article class="choose-card">
-        <div class="choose-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3>Premium materials</h3>
-        <p>We only use high-quality plants, turf, and hardscaping materials from trusted suppliers to ensure durability and performance.</p>
+        <span class="choose-card__icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+        <h3>Proper After Care</h3>
       </article>
+    </div>
+    <div class="choose__photos">
+      <div class="choose__photo">
+        <img src="assets/img/why-detail.jpg" alt="Landscaper carefully planting shrubs" />
+        <span class="badge badge--green badge--sm"><i class="fa-solid fa-circle-exclamation"></i> Attention to every detail</span>
+      </div>
+      <div class="choose__photo">
+        <img src="assets/img/why-satisfaction.jpg" alt="Landscaper laying fresh turf rolls" />
+        <span class="badge badge--green badge--sm"><i class="fa-solid fa-circle-exclamation"></i> Prioritising Customer Satisfaction</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CLIENTS BAND ============ -->
-<section class="clients">
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band" id="quote">
   <div class="container">
-    <h2>What our clients say</h2>
-    <p>We take pride in delivering high-quality landscaping solutions that stand the test of time. Here&rsquo;s what our clients have to say about working with our team.</p>
+    <p>Revamping your outdoor space doesn&rsquo;t have to be daunting. All it takes is one design meeting with our team to share your ideas and to see our done-for-you landscapes. Whether you&rsquo;re looking for a subtle touch or something to make your neighbours talk, we&rsquo;re ready.</p>
+    <a href="#contact" class="btn btn--orange">Schedule your landscape meeting</a>
   </div>
 </section>
 
-<!-- ============ PROJECTS ============ -->
-<section class="projects" id="projects">
-  <div class="container">
-    <h2>Projects we have completed</h2>
-    <p class="section-sub">Take a look at our completed landscaping projects across Perth and see the quality and precision we deliver on every property.</p>
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container testimonials__grid">
+    <article class="testimonial">
+      <img src="assets/img/avatar-nadine.png" alt="" class="testimonial__avatar" />
+      <p>&ldquo;I had the pleasure of working with Oasis Landscapes to transform my garden into a beautiful and tranquil space. They provided excellent customer service and truly understood my vision for the project. Highly recommended!&rdquo;</p>
+      <span class="testimonial__name">Nadine B.</span>
+    </article>
+    <article class="testimonial">
+      <img src="assets/img/avatar-robert.png" alt="" class="testimonial__avatar" />
+      <p>&ldquo;My experience with Oasis Landscapes was nothing short of amazing! They took care of every aspect of the project, from planting to paving, making sure that all work was completed to an incredibly high standard.&rdquo;</p>
+      <span class="testimonial__name">Robert D.</span>
+    </article>
+    <article class="testimonial">
+      <img src="assets/img/avatar-chris.png" alt="" class="testimonial__avatar" />
+      <p>&ldquo;Working with Oasis Landscapes to create an outdoor oasis was one of the best decisions I&rsquo;ve ever made! Their knowledgeable team provided incredible insights throughout the entire process, ensuring that I got exactly what I wanted in terms of both appearance and budget.&rdquo;</p>
+      <span class="testimonial__name">Chris H.</span>
+    </article>
+    <article class="testimonial">
+      <img src="assets/img/avatar-carmen.png" alt="" class="testimonial__avatar" />
+      <p>&ldquo;The team at Oasis Landscapes were so professional and helpful when it came to redesigning our garden according to our needs. They offered creative solutions to problems that we didn&rsquo;t even think about, and their attention to detail was impressive!&rdquo;</p>
+      <span class="testimonial__name">Carmen A.</span>
+    </article>
   </div>
-  <div class="container">
-    <div class="projects__grid">
-      <a class="projects__item" href="#projects"><img src="assets/img/g1.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g2.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g3.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g4.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g5.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g6.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g7.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g8.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g9.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g10.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g11.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g12.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g13.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g14.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g15.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g16.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g17.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g18.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g19.jpg" alt="Completed landscaping project" /></a>
-      <a class="projects__item" href="#projects"><img src="assets/img/g20.jpg" alt="Completed landscaping project" /></a>
+</section>
+
+<!-- ============ WHO ARE WE ============ -->
+<section class="who">
+  <div class="container who__inner">
+    <div class="who__copy">
+      <h2>Who Are We?</h2>
+      <p>Oasis Landscapes of Perth is a full-service landscaping company dedicated to creating stunning outdoor spaces for our clients. Our team of experts specialises in done-for-you landscaping, installation, and maintenance services that will transform any property into a beautiful oasis.</p>
+      <p>We understand that every client has unique needs and desires when it comes to their outdoor space. That&rsquo;s why we take the time to listen to your vision and work closely with you throughout the entire process to ensure that we bring your dream into reality. Whether you&rsquo;re looking for a serene water feature or an elegant hardscape, our team has the expertise and creativity to make it happen.</p>
+    </div>
+    <div class="who__media">
+      <img src="assets/img/who-we-are.jpg" alt="Modern Perth home with landscaped entrance" />
+      <span class="badge badge--green badge--block">Create an emotional response when you pull up to your home.</span>
     </div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
-<section class="faq" id="faq">
-  <div class="container faq__inner">
-    <div class="faq__intro">
-      <h2>Frequently asked questions</h2>
-      <p>We understand that choosing the right landscaping solution comes with questions. Below are some of the most common queries we receive to help you make an informed decision with confidence.</p>
-      <a href="#quote" class="btn btn--teal">View more</a>
-    </div>
-    <div class="faq__list">
-      <details class="faq-item" open>
-        <summary>How long does it take for a new lawn to establish?<span class="faq-item__icon"></span></summary>
-        <div class="faq-item__body"><p>Most turf takes 2&ndash;3 weeks to establish root systems with proper watering, while a lawn grown from seed can take 6&ndash;8 weeks. We&rsquo;ll advise on the best option for Perth&rsquo;s climate and your soil type.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary>Is landscaping disruptive to my property during installation?<span class="faq-item__icon"></span></summary>
-        <div class="faq-item__body"><p>We plan every project to minimise disruption, working in stages where needed and keeping access clear. Most residential jobs are completed with minimal impact on your daily routine.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary>Can you redesign my garden around existing trees or features?<span class="faq-item__icon"></span></summary>
-        <div class="faq-item__body"><p>Absolutely. We always assess existing trees, structures, and features first, and our team will recommend the best approach to incorporate or protect them in your new design.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary>How long does a full landscaping project take?<span class="faq-item__icon"></span></summary>
-        <div class="faq-item__body"><p>Most residential landscaping projects are completed within one to three weeks, depending on the size and complexity of the design and weather conditions.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary>Is artificial turf a low-maintenance option?<span class="faq-item__icon"></span></summary>
-        <div class="faq-item__body"><p>Yes. Artificial turf requires no mowing or watering and holds up well to Perth&rsquo;s dry summers, making it a popular choice for busy households and water-wise gardens.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary>Do gardens require a lot of maintenance after installation?<span class="faq-item__icon"></span></summary>
-        <div class="faq-item__body"><p>We design with low-maintenance, water-wise planting in mind. A simple regular watering and seasonal tidy-up is usually all that&rsquo;s needed to keep your garden performing at its best for years.</p></div>
-      </details>
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta" id="financing">
+  <div class="final-cta__media">
+    <img src="assets/img/sketch.jpg" alt="Hand-drawn landscape design plan" />
+  </div>
+  <div class="container final-cta__inner">
+    <div class="final-cta__copy">
+      <h2>Turn Your Outdoor Space Into an Oasis!</h2>
+      <span class="divider divider--left"></span>
+      <p>When you schedule a landscape meeting with our team, we&rsquo;ll share our top landscape designs and determine what is the best match for your outdoor space.</p>
+      <a href="#contact" class="btn btn--green">Schedule your landscape meeting</a>
     </div>
   </div>
 </section>
@@ -287,45 +209,38 @@
 <footer class="footer" id="contact">
   <div class="container footer__inner">
     <div class="footer__brand">
-      <svg class="logo__svg" viewBox="0 0 300 96" role="img" aria-label="Perth Landscape Co.">
-        <polyline points="44,40 150,12 256,40" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-        <polyline points="44,40 96,28" fill="none" stroke="#2e7d32" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="150" y="62" text-anchor="middle" class="logo__name">PERTH</text>
-        <text x="150" y="86" text-anchor="middle" class="logo__sub">LANDSCAPE CO.</text>
-      </svg>
-      <p>Reliable landscaping solutions designed for durability, performance, and long-term outdoor living.</p>
-      <div class="footer__social">
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      </div>
+      <img src="assets/img/logo-icon.png" alt="" class="logo__icon" />
+      <span class="logo__text">
+        <span class="logo__name">OASIS</span>
+        <span class="logo__sub">LANDSCAPES &middot; PERTH</span>
+      </span>
     </div>
 
     <div class="footer__col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#solutions">Services</a></li>
-        <li><a href="#solutions">Landscapes</a></li>
-        <li><a href="#projects">Suburbs</a></li>
-        <li><a href="#quote">Estimate</a></li>
-        <li><a href="#faq">FAQs</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <h4>Contact us</h4>
+      <h4>Contact Information</h4>
       <ul class="footer__contact">
-        <li><i class="fa-solid fa-phone"></i> <a href="tel:0400000000">0400 000 000</a></li>
-        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@yourcompany.com.au">info@yourcompany.com.au</a></li>
-        <li><i class="fa-solid fa-location-dot"></i> Perth, Western Australia</li>
+        <li><i class="fa-solid fa-phone"></i> Phone: <a href="tel:0861234567">(08) 6123 4567</a></li>
+        <li><i class="fa-solid fa-clock"></i> Monday to Friday: <span>9AM to 5PM</span></li>
+        <li><i class="fa-solid fa-clock"></i> Saturday &amp; Sunday: <span>Closed</span></li>
       </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__col-alt">Site Links</h4>
+      <ul class="footer__links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#financing">Financing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#quote" class="pill pill--apply">Apply Online</a>
     </div>
   </div>
 
   <div class="footer__bottom">
     <div class="container footer__bottom-inner">
-      <p>&copy; Copyright 2026 Perth Landscape Co. All Rights Reserved.</p>
-      <p>Designed &amp; Developed by Your Agency</p>
+      <p>&copy; 2026 Oasis Landscapes. All rights reserved.</p>
+      <p class="footer__legal"><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a></p>
     </div>
   </div>
 </footer>

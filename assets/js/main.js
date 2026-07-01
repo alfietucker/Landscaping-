@@ -20,7 +20,6 @@
   });
   scrim.addEventListener('click', function () { setOpen(false); });
 
-  // Close menu when a link is tapped (but let dropdown parents stay)
   menu.querySelectorAll('a').forEach(function (a) {
     a.addEventListener('click', function () {
       if (window.innerWidth <= 880) setOpen(false);
@@ -29,19 +28,5 @@
 
   window.addEventListener('resize', function () {
     if (window.innerWidth > 880) setOpen(false);
-  });
-})();
-
-// FAQ accordion — keep only one open at a time
-(function () {
-  var items = document.querySelectorAll('.faq-item');
-  items.forEach(function (item) {
-    item.addEventListener('toggle', function () {
-      if (item.open) {
-        items.forEach(function (other) {
-          if (other !== item) other.open = false;
-        });
-      }
-    });
   });
 })();
